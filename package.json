@@ -1,0 +1,20 @@
+{
+  "name": "project1_guestbook",
+  "version": "1.0.0",
+  "description": "Laurea fullstack project",
+  "main": "server.js",
+  "scripts": {
+    "build": "",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "guestbook"
+  ],
+  "author": "Daniele.Mercrui",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0"
+  }
+}

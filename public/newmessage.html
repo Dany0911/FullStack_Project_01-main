@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <div class="pure-menu pure-menu-horizontal">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/">Home</a>
+        </li>
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/guestbook">Guestbook</a>
+        </li>
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/newmessage">New Message</a>
+        </li>
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/ajaxmessage">Ajax Message</a>
+        </li>
+      </ul>
+    </div>
+    
+    <section class="banner">
+      <h1 class="banner-title">Leave a note</h1>
+    </section>
+
+      <div class="" style = "text-align: center;">
+        <form method="POST" class="pure-form pure-form-aligned" action="/addpost">
+          <fieldset>
+            <div class="pure-control-group">
+            <label for="username" class="form-label">Username:</label>
+              <input type="text" name="username" id="username" placeholder="Username" class="form-input" required>
+            </div>
+            <div class="pure-control-group">
+             <label for="country" class="form-label">Country:</label>
+              <input type="text" name="country" id="country" placeholder="Country" class="form-input" required>
+            </div>
+            <div class="pure-control-group">
+               <label for="message" class="form-label">Message:</label>
+              <input id="message"  name="message" placeholder="Message" class="form-input" required></textarea>
+            </div>
+            <div class="" style = "text-align: center;">
+              <input class="pure-button" type="submit" style="width:30%; margin: auto;" value="Submit">
+            </div>
+         </fieldset>
+        </form>
+      </div>
+    </div>
+    </body>
+</html>
